@@ -71,7 +71,7 @@
       class="fixed top-0 left-0 w-full items-center justify-center p-3 h-auto z-[999]"
     >
       <nav class="max-w-7xl flex items-center justify-between mx-auto">
-        <ul class="flex gap-4 flex-wrap">
+        <ul class="links flex gap-4 flex-wrap">
           <li>
             <a
               aria-label="Telegram"
@@ -165,7 +165,7 @@
           href="https://jup.ag/swap/SOL-9SnYwHGP7H8CcLgh9w7ZEJzUs9UKE1Rnr17pZFxKGXf1"
           >BUY</a
         ><button
-          class="flex items-center justify-center md:hidden h-auto w-[35px]"
+          class="hidden-block flex items-center justify-center md:hidden h-auto w-[35px]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -494,4 +494,16 @@
       </section>
     </main>
   </body>
+  <style>
+   
+    @media screen and (max-width: 768px) {
+      .hidden-block {
+        display:none;
+      }
+      .links{
+        width: 100%;
+        justify-content: center;
+      }
+  }
+  </style>
 </html>
